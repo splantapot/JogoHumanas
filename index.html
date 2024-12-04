@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo Industria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label id="gameTimer" class="timer"></label>
+
+    <div class="menu" id="menu">
+        <label class="title">Industria Viva</label>
+        <button class="gameMode" onclick="startSomeGame(0)">Taylorismo</button> <br>
+        <button class="gameMode" onclick="startSomeGame(1)">Fordismo</button><br>
+        <button class="gameMode" onclick="startSomeGame(2)">Toyotismo</button><br>
+        <button class="gameMode" onclick="startSomeGame(3)">Indústria 4.0</button><br>
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <canvas id="supportCanvas"></canvas>
+    
+    <script src="js/imageList.js" defer></script>
+    
+    <script src="js/classes/functional/MathPlus.js" defer></script>
+    <script src="js/classes/functional/GameController.js" defer></script>
+    <script src="js/classes/functional/GameTimer.js" defer></script>
+    <script src="js/classes/functional/ScreenSettings.js" defer></script>
+    <script src="js/classes/playable/Player.js" defer></script>
+
+    <script src="js/settings.js" defer></script>
+
+    <script src="js/classes/playable/Material.js" defer></script>
+    <script src="js/classes/playable/Toy.js" defer></script>
+    
+    <script src="js/classes/playable/Room.js" defer></script>
+    <script src="js/classes/playable/RoomCrafting.js" defer></script>
+    <script src="js/classes/playable/RoomLibrary.js" defer></script>
+    <script src="js/classes/playable/RoomMaterial.js" defer></script>
+    <script src="js/classes/playable/RoomShop.js" defer></script>
+    <script src="js/classes/playable/RoomStock.js" defer></script>
+    <script src="js/classes/playable/RoomTrash.js" defer></script>
+    <script src="js/classes/playable/RoomAutoMaterial.js" defer></script>
+
+    <script src="js/classes/playable/ConveyorBelt.js" defer></script>
+    <script src="js/classes/playable/ProductionLever.js" defer></script>
+    <script src="js/classes/playable/Button.js" defer></script>
+
+    <script src="js/gameMode/taylorismo.js" defer></script>
+    <script src="js/gameMode/fordismo.js" defer></script>
+    <script src="js/gameMode/toyotismo.js" defer></script>
+    <script src="js/gameMode/industry4_0.js" defer></script>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
